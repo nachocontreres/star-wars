@@ -1,10 +1,15 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Characters from "./features/characters";
+import Favorites from "./features/favorites";
 
 const App = () => {
   return (
-    <>
-      <div>Star wars app!</div>
-    </>
+    <Routes>
+      {/* <Menu/> */}
+      <Route path="/" element={<Characters />} />
+      <Route path="/favorites" element={<Favorites />} />
+    </Routes>
   );
 };
 

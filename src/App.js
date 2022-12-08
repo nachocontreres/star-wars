@@ -1,24 +1,16 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Characters from "./features/characters";
+import Favorites from "./features/favorites";
 
 const App = () => {
   return (
-    <Router>
+    <Routes>
       {/* <Menu/> */}
-      <Switch>
-        <Route exact path="/" component={Characters} />
-      </Switch>
-    </Router>
+      <Route path="/" element={<Characters />} />
+      <Route path="/favorites" element={<Favorites />} />
+    </Routes>
   );
 };
-
-ReactDOM.render(
-  <React.StrictMode>
-    <Routing />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
 
 export default App;

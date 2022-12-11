@@ -5,6 +5,7 @@ export const StyledMenu = styled.nav`
   flex-direction: column;
   justify-content: flex-start;
   background: var(--color--primary);
+  display: ${({ open }) => (open ? "block" : "none")};
   transform: ${({ open }) =>
     open
       ? "translateX(0%) translateZ(0px)"

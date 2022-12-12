@@ -8,12 +8,12 @@ export const StyledCharactersList = styled.div`
   margin: auto;
   overflow-y: auto;
 
-  /* @media screen and (max-width: 1024px) {
-    padding-left: 100px;
+  @media screen and (min-width: 1024px) {
+    padding-top: 130px;
   }
-  @media screen and (max-width: 600px) {
-    padding-left: 47px;
-  } */
+  @media screen and (min-width: 600px) and (max-width: 1024px) {
+    padding-top: 110px;
+  }
 `;
 
 const spinAnimation = keyframes`

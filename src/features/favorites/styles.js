@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 export const StyledFavoritesList = styled.div`
   display: flex;
@@ -7,13 +7,13 @@ export const StyledFavoritesList = styled.div`
   padding-top: 70px;
   margin: auto;
   overflow-y: auto;
-
-  /* @media screen and (max-width: 1024px) {
-    padding-left: 100px;
+  align-items: center;
+  @media screen and (min-width: 1024px) {
+    padding-top: 130px;
   }
-  @media screen and (max-width: 600px) {
-    padding-left: 47px;
-  } */
+  @media screen and (min-width: 600px) and (max-width: 1024px) {
+    padding-top: 110px;
+  }
 `;
 export const StyledSearch = styled.div`
   box-sizing: border-box;
@@ -28,9 +28,17 @@ export const StyledSearch = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 3px 12px;
+  @media screen and (min-width: 1024px) {
+    width: 70%;
+    padding: 4px 15px;
+  }
+  @media screen and (min-width: 600px) and (max-width: 1024px) {
+    width: 80%;
+  }
 `;
 export const StyledInput = styled.input`
-  width: 90%;
+  width: 100%;
   cursor: pointer;
   height: 80%;
   font-size: 13px;
@@ -40,12 +48,27 @@ export const StyledInput = styled.input`
   text-align: left;
   background-color: transparent;
   color: white;
+  @media screen and (min-width: 1024px) {
+    font-size: 15px;
+  }
+  @media screen and (min-width: 600px) and (max-width: 1024px) {
+    font-size: 14px;
+  }
 `;
 export const StyledSearchTitle = styled.h5`
+  width: calc(100% - 40px);
   font-size: 13px;
   font-weight: 600;
   line-height: 18px;
   letter-spacing: 0.5px;
   text-align: left;
-  padding-left: 20px;
+  @media screen and (min-width: 1024px) {
+    font-size: 18px;
+    width: 70%;
+    padding-left: 0;
+  }
+  @media screen and (min-width: 600px) and (max-width: 1024px) {
+    width: 80%;
+    font-size: 16px;
+  }
 `;

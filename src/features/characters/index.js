@@ -58,7 +58,7 @@ const Characters = () => {
       {loading && <Loader data-testid="loader" src={loadingPath} />}
 
       {characters.map((character) => (
-        <Character character={character} />
+        <Character character={character} key={character.name} />
       ))}
       {error && alert("There was an error trying to load Characters")}
     </StyledCharactersList>

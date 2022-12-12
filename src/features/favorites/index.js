@@ -19,7 +19,9 @@ const Favorites = () => {
   const [currentSearch, setCurrentSearch] = useState("");
 
   const matchesSearch = (currentCharacter) => {
-    return currentCharacter.name.toLowerCase().includes(currentSearch);
+    return currentCharacter.name
+      .toLowerCase()
+      .includes(currentSearch.toLowerCase());
   };
 
   const handleSetCurrentSearch = (event) => {

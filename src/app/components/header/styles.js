@@ -8,4 +8,10 @@ export const StyledPageHeader = styled.h1`
   font-size: 15px;
   font-weight: 600;
   text-align: center;
+  @media screen and (min-width: 1024px) {
+    font-size: 28px;
+  }
+  @media screen and (min-width: 600px) and (max-width: 1024px) {
+    font-size: 20px;
+  }
 `;

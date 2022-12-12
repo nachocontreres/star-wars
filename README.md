@@ -4,7 +4,7 @@
 In this responsive web app you will be able to see all Star Wars characters and their information from [STAR WARS API](https://swapi.dev/)
 
 
-## Live version: 
+## Live version: https://luxury-starburst-b9aa49.netlify.app/
 
 ## Installing
 - npm install on root folder

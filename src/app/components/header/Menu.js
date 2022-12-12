@@ -1,6 +1,6 @@
 import React from "react";
 import { bool } from "prop-types";
-import { StyledMenu, StyledLink } from "./styles";
+import { StyledMenu, StyledLink } from "./menuStyles";
 import { useNavigate } from "react-router-dom";
 
 const Menu = ({ open, ...props }) => {

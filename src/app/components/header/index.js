@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
-import Burger from "../../components/burger";
-import Menu from "../../components/menu";
+import Burger from "../burger";
+import Menu from "../menu";
 import { StyledPageHeader } from "./styles";
 
 const Header = () => {

@@ -6,7 +6,9 @@ import { StyledPageHeader } from "./styles";
 const Header = () => {
   const node = useRef();
   const [open, setOpen] = useState(false);
-  const [currentTitle, setCurrentTitle] = useState("Characters");
+  const pageTitle = window.location.href.includes("favorite")
+    ? "Favorites"
+    : "Characters";
   return (
     <div
       ref={node}
@@ -17,14 +19,9 @@ const Header = () => {
         alignItems: "center",
       }}
     >
-      <StyledPageHeader>{currentTitle}</StyledPageHeader>
+      <StyledPageHeader>{pageTitle}</StyledPageHeader>
       <Burger open={open} setOpen={setOpen} aria-controls="menu" />
-      <Menu
-        setCurrentTitle={setCurrentTitle}
-        open={open}
-        setOpen={setOpen}
-        id="menu"
-      />
+      <Menu open={open} setOpen={setOpen} id="menu" />
     </div>
   );
 };

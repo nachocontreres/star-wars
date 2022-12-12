@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 
 export const CharacterContainer = styled.div`
   height: 100px;
-  width: 90%;
+  width: calc(100% - 38px);
   margin: auto;
   border-bottom: 1px solid #463b5e;
   margin-top: 20px;

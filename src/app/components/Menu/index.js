@@ -14,7 +14,6 @@ const Menu = ({ open, ...props }) => {
         className="link"
         onClick={() => {
           props.setOpen(false);
-          props.setCurrentTitle("Characters");
           navigate("/");
         }}
         tabIndex={tabIndex}
@@ -25,7 +24,6 @@ const Menu = ({ open, ...props }) => {
         className="link"
         onClick={() => {
           props.setOpen(false);
-          props.setCurrentTitle("Favorites");
           navigate("/favorites");
         }}
         tabIndex={tabIndex}

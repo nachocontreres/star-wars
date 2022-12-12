@@ -4,10 +4,14 @@ const charactersSlice = createSlice({
   name: "charactersData",
   initialState: {
     characters: [],
+    searchedCharacters: [],
   },
   reducers: {
     setCharacters: (state, { payload }) => {
       state.characters = payload;
+    },
+    setSearchedCharacters: (state, { payload }) => {
+      state.searchedCharacters = payload;
     },
     setFavorite: (state, { payload }) => {
       let updatedCharacter = state.characters.filter(
@@ -20,4 +24,5 @@ const charactersSlice = createSlice({
 
 export default charactersSlice.reducer;
 
-export const { setCharacters, setFavorite } = charactersSlice.actions;
+export const { setCharacters, setFavorite, setSearchedCharacters } =
+  charactersSlice.actions;
